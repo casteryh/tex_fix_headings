@@ -618,7 +618,7 @@ class TexHeadingFixer:
         
         for i, line in enumerate(lines, 1):
             original_line = line
-            processed_line = self.process_line(line_num, line)
+            processed_line = self.process_line(i, line)
             
             if processed_line != original_line:
                 changes_made = True
